@@ -6,6 +6,9 @@ interesting boilerpate code.
 It also stubs the usage on older Node.js versions, so your code will still
 compile there. In those versions, the fast path will not be used.
 
+> **Note:** This module is intended as a temporary measure, until `N-API` gets
+> support for `v8-fast-api-calls.h`.
+
 ## Usage
 
 First, make sure your `binding.gyp` adds the output of this module to the

@@ -11,6 +11,7 @@ function addFast (a, b) {
   return resultInt32[0];
 }
 
+// We run this 10k times, so that at some point optimization happens, putting us on the fast path.
 for (let i = 0; i < 10000; i++) {
   const result = addFast(2, 3);
   if (result === 7) {
