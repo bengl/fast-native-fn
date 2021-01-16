@@ -1,0 +1,32 @@
+{
+  "name": "fast-native-fn",
+  "version": "1.0.0",
+  "description": "A helper method for setting up fast C++ calls with v8-fast-api-calls.h",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "cd test && node-gyp rebuild",
+    "test": "node test/test.js",
+    "posttest": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bengl/fast-native-fn.git"
+  },
+  "keywords": [
+    "v8",
+    "v8-fast-api-calls.h",
+    "fast",
+    "cpp",
+    "c++"
+  ],
+  "author": "Bryan English <bryan@bryanenglish.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bengl/fast-native-fn/issues"
+  },
+  "homepage": "https://github.com/bengl/fast-native-fn#readme",
+  "devDependencies": {
+    "node-gyp": "^7.1.2",
+    "semistandard": "^16.0.0"
+  }
+}
