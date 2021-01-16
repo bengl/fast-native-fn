@@ -25,6 +25,10 @@ namespace test {
   }
 
   void AddFast(ApiObject receiver, int32_t a, int32_t b) {
+    /*
+     * It's generally bad to produce a different result on the fast path, but
+     * we're doing it here for test purposes.
+     */
     add(a, b + 2);
   }
 

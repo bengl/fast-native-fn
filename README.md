@@ -62,6 +62,8 @@ NODE_SET_FAST_METHOD(
 Make sure to run your code with `--turbo-fast-api-calls` to get enable the fast
 paths.
 
+For a more complete example, see `test/test.cpp`.
+
 ## License
 
 The MIT license. See LICENSE.txt.

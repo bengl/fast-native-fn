@@ -27,11 +27,14 @@ void NODE_SET_FAST_METHOD(v8::Local<v8::Object> exports, const char * name, F* f
 #else
 
 #include <stdint.h>
+
+/* We're defining this here for older versions of Node.js, so that they still compile. */
 namespace v8 {
   struct ApiObject {
     uintptr_t address;
   };
 }
+
 #define NODE_SET_FAST_METHOD(exports, name, fast, slow) \
   NODE_SET_METHOD(exports, name, slow)
 
